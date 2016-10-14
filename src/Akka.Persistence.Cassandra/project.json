@@ -1,0 +1,22 @@
+﻿{
+  "version": "1.2.0-*",
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "CassandraCSharpDriver": "3.1.0-beta1",
+    "Akka.Persistence": "1.2.0"
+  },
+
+  "frameworks": {
+    "net45": {},
+    "netstandard1.6": {
+      "imports": "portable-net45+win8"
+    }
+  },
+
+  "buildOptions": {
+    "embed": {
+      "includeFiles": ["reference.conf"]
+    }
+  }
+}

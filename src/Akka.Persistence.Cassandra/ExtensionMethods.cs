@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Akka.Actor;
 using Cassandra;
 
@@ -26,7 +27,7 @@ namespace Akka.Persistence.Cassandra
         /// </summary>
         internal static string ToQualifiedString(this Type t)
         {
-            return string.Format("{0}, {1}", t.FullName, t.Assembly.GetName().Name);
+            return string.Format("{0}, {1}", t.FullName, t.GetTypeInfo().Assembly.GetName().Name);
         }
 
         /// <summary>

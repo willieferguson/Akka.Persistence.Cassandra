@@ -216,7 +216,7 @@ namespace Akka.Persistence.Cassandra.Tests
 
         #region Test Messages and Actors
 
-        [Serializable]
+        //[Serializable]
         public class DeleteToCommand
         {
             public long SequenceNumber { get; private set; }
@@ -229,7 +229,7 @@ namespace Akka.Persistence.Cassandra.Tests
             }
         }
 
-        [Serializable]
+        //[Serializable]
         public class HandledMessage
         {
             public string Message { get; private set; }
